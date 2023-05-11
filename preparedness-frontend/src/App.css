@@ -7,8 +7,6 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 6px 12px 6px 12px;
-  
 }
 
 Label {
@@ -23,4 +21,5 @@ Label {
   justify-content: center;
   text-align: center;
   font-size: 18px;
+  padding: 12px 6px 12px 6px;
 }

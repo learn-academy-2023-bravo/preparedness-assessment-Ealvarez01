@@ -31,9 +31,8 @@ const App = () => {
     height:'100vh',
     marginTop:'0px',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    
-};
+    backgroundRepeat: 'no-repeat'
+}
 
   return (
     
@@ -50,21 +49,23 @@ const App = () => {
           <Label for="name">Enter your name</Label>
         <FormGroup>
           <Input 
-            style={{
-              marginBottom: '20px',
-              display: 'flex',
-              flexDirection: 'column'}}
-              onChange={handleChange} />
+          className="input-field" 
+          value={input} onChange={handleChange}
+          />
         </FormGroup>
         </div>
+        <br />
         <FormGroup>
         <Button 
           style={{
             color: 'white',
             backgroundColor: '#0dcaf0',
-            paddingBlock: '10px 10px 10px 10px',
-            margin: '20px',
-            marginTop: '20px'
+            margin: 'auto',
+            position: 'absolute',
+            bottom: '60%',
+            right: '51%',
+            paddingRight: '20px',
+            paddingLeft: '20px'
           }}
           onClick={toggle}>Click Me</Button>
         </FormGroup>
@@ -73,9 +74,12 @@ const App = () => {
           style={{
             color: 'white',
             backgroundColor: '#0dcaf0',
-            paddingBlock: '10px 10px 10px 10px',
-            margin: '20px',
-            marginTop: '20px'
+            margin: 'auto',
+            position: 'absolute',
+            bottom: '60%',
+            left: '51%',
+            paddingRight: '30px',
+            paddingLeft: '30px'
           }}
           className="clickMe" 
           onClick={handleReset}>Reset</Button>
